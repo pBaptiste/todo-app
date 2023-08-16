@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+.todo-text {
+  @apply text-light-primary dark:text-dark-primary text-xs lg:text-[1.125rem] tracking-[-0.167px] lg:tracking-[-0.25px]
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +28,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
