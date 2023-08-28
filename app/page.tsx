@@ -17,12 +17,12 @@ export default function Home() {
           <ThemeSwitcher />
         </div>
 
-         <TodoContainer />
+        <TodoContainer />
 
-         <p className='text-center mt-4 text-light-secondary dark:text-dark-secondary text-sm tracking-[-0.194px] lg:pt-7'>Drag and drop to reorder list</p>
-        
+        <p className='text-center mt-6 lg:mt-4 text-light-secondary dark:text-dark-secondary text-sm tracking-[-0.194px] lg:pt-7'>Drag and drop to reorder list</p>
+
       </section>
-      
+
     </main>
   )
 }
