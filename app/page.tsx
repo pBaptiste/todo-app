@@ -4,7 +4,7 @@ import TodoContainer from '@/components/todo-container'
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen justify-center pt-12 lg:pt-[70px] px-6 pb-[72px] lg:pb-[52px] bg-[#FAFAFA] dark:bg-[#171823]">
+    <main className="relative flex min-h-screen justify-center pt-12 lg:pt-[70px] px-6 pb-[72px] lg:pb-[52px] duration-200 bg-[#FAFAFA] dark:bg-[#171823]">
 
       {/* Background Image */}
       <div className='absolute top-0 left-0 w-full h-[375px] lg:h-[300px] bg-mobile-light lg:bg-desktop-light dark:bg-mobile-dark lg:dark:bg-desktop-dark bg-no-repeat bg-cover z-0'></div>

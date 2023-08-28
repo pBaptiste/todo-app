@@ -51,8 +51,8 @@ const TodoItem = ({ text, completed, id, deleteTodo, updateCompleted }: Props) =
         />
 
         <button type='button' onClick={handleCheck} className='flex items-center gap-3 lg:gap-6'>
-          {completed? <FullRing /> : (isHovered ? <HoverRing /> : <EmptyRing />)}
-          <p className={`todo-text ${completed && 'line-through opacity-30 dark:opacity-30'}`}>{text}</p>
+          {completed ? <FullRing /> : (isHovered ? <HoverRing /> : <EmptyRing />)}
+          <p className={`todo-text opacity-100 transition-opacity duration-500 ${completed && 'line-through opacity-30 dark:opacity-30'}`}>{text}</p>
         </button>
 
         {isHovered &&

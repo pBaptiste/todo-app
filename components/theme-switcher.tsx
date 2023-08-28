@@ -5,20 +5,20 @@ import Image from 'next/image'
 
 const ThemeSwitcher = () => {
     const { isDarkMode, setIsDarkMode } = useContext(ThemeContext)
-    
-    const handleClick = () => { 
+
+    const handleClick = () => {
         setIsDarkMode((prev) => !prev)
     }
-  
-  return (
-    <button onClick={handleClick}>
-        {isDarkMode ? (
-            <Image src="/images/icon-sun.svg" width={26} height={26} alt="Sun" />
-        ) : (
-            <Image src="/images/icon-moon.svg" width={26} height={26} alt="Moon" />
-        )}
-    </button>
-  )
+
+    return (
+        <button className='transition duration-[5000]' onClick={handleClick}>
+            {isDarkMode ? (
+                <Image src="/images/icon-sun.svg" width={26} height={26} alt="Sun" />
+            ) : (
+                <Image src="/images/icon-moon.svg" width={26} height={26} alt="Moon" />
+            )}
+        </button>
+    )
 }
 
 export default ThemeSwitcher
